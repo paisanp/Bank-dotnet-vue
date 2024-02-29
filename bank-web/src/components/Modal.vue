@@ -36,7 +36,7 @@ onMounted(() =>{
                         <div class="size-6">
                             <Phone/>
                         </div>
-                        <select class="grow" style="background-color: transparent;" >
+                        <select class="grow" style="background-color: transparent;" v-model="receiverId">
                         <option disabled selected>Phone Number?</option>
                         <option :value="user.userId" v-for="user in bankStore.users">{{ user.phoneNumber }} - {{ user.firstName }} {{ user.lastName }}</option>
                         </select>
